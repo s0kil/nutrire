@@ -11,11 +11,24 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.7.1
+
       - name: Setup Rubocop
-        run: gem install --no-document bundler && bundle
+        run: |
+          gem install --no-document bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+
       - name: Rubocop Report
         run: bundle exec rubocop --color
 
@@ -24,12 +37,22 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Setup Stylelint
         run: |
           npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
           [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/ror/.stylelintrc.json
+
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
