@@ -46,8 +46,13 @@
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.7, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.9.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.13.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="haml (v5.2.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hamlit (v2.13.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hamlit-rails (v0.2.3, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="html2haml (v2.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.5, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.10.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.2.1, Ruby 2.7.1) [gem]" level="application" />
@@ -86,13 +91,16 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rake (v0.5.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rspec (v1.44.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.10.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby_parser (v3.15.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v6.0.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sexp_processor (v4.15.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.1.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.0.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.2, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="temple (v0.8.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.10, Ruby 2.7.1) [gem]" level="application" />
@@ -358,6 +366,11 @@
                 </subtasks>
               </RakeTaskImpl>
               <RakeTaskImpl description="" fullCommand="db:truncate_all" id="truncate_all" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="hamlit">
+            <subtasks>
+              <RakeTaskImpl description="Convert erb to haml in app/views" fullCommand="hamlit:erb2haml" id="erb2haml" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl description="Lint Project" fullCommand="lint" id="lint" />
