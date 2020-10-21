@@ -135,7 +135,7 @@ GEM
       ffi (~> 1.0)
     regexp_parser (1.8.2)
     rexml (3.2.4)
-    rubocop (1.0.0)
+    rubocop (0.93.1)
       parallel (~> 1.10)
       parser (>= 2.7.1.5)
       rainbow (>= 2.2.2, < 4.0)
@@ -146,10 +146,18 @@ GEM
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (1.0.0)
       parser (>= 2.7.1.5)
+    rubocop-performance (1.8.1)
+      rubocop (>= 0.87.0)
+      rubocop-ast (>= 0.4.0)
     rubocop-rails (2.8.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 0.87.0)
+    rubocop-rake (0.5.1)
+      rubocop
+    rubocop-rspec (1.44.1)
+      rubocop (~> 0.87)
+      rubocop-ast (>= 0.7.1)
     ruby-progressbar (1.10.1)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -207,7 +215,10 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   rubocop
+  rubocop-performance
   rubocop-rails
+  rubocop-rake
+  rubocop-rspec
   sass-rails (>= 6)
   spring
   spring-watcher-listen (~> 2.0.0)

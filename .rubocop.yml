@@ -1,6 +1,10 @@
 # https://github.com/microverseinc/linters-config/blob/master/ror/.rubocop.yml
 
-require: rubocop-rails
+require:
+  - rubocop-rake
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-performance
 
 AllCops:
   Exclude:
