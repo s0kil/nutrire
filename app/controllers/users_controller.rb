@@ -3,6 +3,10 @@ class UsersController < Clearance::UsersController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :username, :password)
+    if params.include?(:user)
+      params.require(:user).permit(:name, :email, :username, :password)
+    else
+      {}
+    end
   end
 end
