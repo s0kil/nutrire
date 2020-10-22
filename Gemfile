@@ -15,9 +15,10 @@ gem 'hamlit-rails'
 gem 'html2haml'
 
 # Automatic eager loading for Active Record
+# https://www.salsify.com/blog/engineering/automatic-eager-loading-rails
 gem 'goldiloader'
 
-# N+1 queries
+# Detect N+1 queries
 gem 'bullet'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
