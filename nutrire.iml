@@ -32,6 +32,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actiontext (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_record_doctor (v1.7.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activejob (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
@@ -42,6 +43,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.4.8, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bullet (v6.1.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.1.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.7, Ruby 2.7.1) [gem]" level="application" />
@@ -56,12 +58,14 @@
     <orderEntry type="library" scope="PROVIDED" name="faker (v2.14.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.13.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="goldiloader (v3.1.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml (v5.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hamlit (v2.13.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hamlit-rails (v0.2.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="html2haml (v2.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.5, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.2.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="lol_dba (v2.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.7.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marcel (v0.3.3, Ruby 2.7.1) [gem]" level="application" />
@@ -76,7 +80,7 @@
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.19.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v2.7.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.2.3, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="puma (v4.3.6, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v5.0.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-proxy (v0.6.5, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v1.1.0, Ruby 2.7.1) [gem]" level="application" />
@@ -106,6 +110,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v6.0.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="semantic_range (v2.3.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sexp_processor (v4.15.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shoulda-matchers (v4.4.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.1.1, Ruby 2.7.1) [gem]" level="application" />
@@ -120,8 +125,9 @@
     <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.7, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v1.7.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uniform_notifier (v1.13.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.0.4, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="webpacker (v4.3.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webpacker (v5.2.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.4.0, Ruby 2.7.1) [gem]" level="application" />
@@ -136,8 +142,10 @@
         <option value="active_record:application_record" />
         <option value="active_record:migration" />
         <option value="active_record:model" />
+        <option value="active_record_doctor:add_indexes" />
         <option value="application_record" />
         <option value="assets" />
+        <option value="bullet:install" />
         <option value="channel" />
         <option value="controller" />
         <option value="factory_bot:model" />
@@ -193,8 +201,10 @@
         <option value="active_record:application_record" />
         <option value="active_record:migration" />
         <option value="active_record:model" />
+        <option value="active_record_doctor:add_indexes" />
         <option value="application_record" />
         <option value="assets" />
+        <option value="bullet:install" />
         <option value="channel" />
         <option value="controller" />
         <option value="factory_bot:model" />
@@ -337,6 +347,7 @@
                   <RakeTaskImpl description="Set the environment value for the database" fullCommand="db:environment:set" id="set" />
                 </subtasks>
               </RakeTaskImpl>
+              <RakeTaskImpl description="Display a migration for adding/removing all necessary indexes based on associations" fullCommand="db:find_indexes" id="find_indexes" />
               <RakeTaskImpl id="fixtures">
                 <subtasks>
                   <RakeTaskImpl description="Loads fixtures into the current environment's database" fullCommand="db:fixtures:load" id="load" />
@@ -353,6 +364,7 @@
                   <RakeTaskImpl description="" fullCommand="db:migrate:up" id="up" />
                 </subtasks>
               </RakeTaskImpl>
+              <RakeTaskImpl description="Generate .sql files for your migrations inside db/migrate_sql folder" fullCommand="db:migrate_sql[which]" id="migrate_sql[which]" />
               <RakeTaskImpl description="Runs setup if database does not exist, or runs migrations if it does" fullCommand="db:prepare" id="prepare" />
               <RakeTaskImpl description="Rolls the schema back to the previous version (specify steps w/ STEP=n)" fullCommand="db:rollback" id="rollback" />
               <RakeTaskImpl id="schema">
@@ -401,6 +413,7 @@
               </RakeTaskImpl>
               <RakeTaskImpl description="" fullCommand="db:forward" id="forward" />
               <RakeTaskImpl description="" fullCommand="db:load_config" id="load_config" />
+              <RakeTaskImpl description="" fullCommand="db:migrate_sql" id="migrate_sql" />
               <RakeTaskImpl description="" fullCommand="db:purge" id="purge" />
               <RakeTaskImpl id="purge">
                 <subtasks>
@@ -489,7 +502,7 @@
               <RakeTaskImpl description="Verifies that webpack &amp; webpack-dev-server are present" fullCommand="webpacker:check_binstubs" id="check_binstubs" />
               <RakeTaskImpl description="Verifies if Node.js is installed" fullCommand="webpacker:check_node" id="check_node" />
               <RakeTaskImpl description="Verifies if Yarn is installed" fullCommand="webpacker:check_yarn" id="check_yarn" />
-              <RakeTaskImpl description="Remove old compiled webpacks" fullCommand="webpacker:clean[keep]" id="clean[keep]" />
+              <RakeTaskImpl description="Remove old compiled webpacks" fullCommand="webpacker:clean[keep,age]" id="clean[keep,age]" />
               <RakeTaskImpl description="Remove the webpack compiled output directory" fullCommand="webpacker:clobber" id="clobber" />
               <RakeTaskImpl description="Compile JavaScript packs using webpack for production with digests" fullCommand="webpacker:compile" id="compile" />
               <RakeTaskImpl description="Provide information on Webpacker's environment" fullCommand="webpacker:info" id="info" />
@@ -520,6 +533,19 @@
           <RakeTaskImpl id="zeitwerk">
             <subtasks>
               <RakeTaskImpl description="Checks project structure for Zeitwerk compatibility" fullCommand="zeitwerk:check" id="check" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="active_record_doctor">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:extraneous_indexes" id="extraneous_indexes" />
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:incorrect_boolean_presence_validation" id="incorrect_boolean_presence_validation" />
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:missing_foreign_keys" id="missing_foreign_keys" />
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:missing_non_null_constraint" id="missing_non_null_constraint" />
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:missing_presence_validation" id="missing_presence_validation" />
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:missing_unique_indexes" id="missing_unique_indexes" />
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:undefined_table_references" id="undefined_table_references" />
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:unindexed_deleted_at" id="unindexed_deleted_at" />
+              <RakeTaskImpl description="" fullCommand="active_record_doctor:unindexed_foreign_keys" id="unindexed_foreign_keys" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl description="" fullCommand="default" id="default" />

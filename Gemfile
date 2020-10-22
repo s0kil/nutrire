@@ -14,6 +14,12 @@ gem 'hamlit'
 gem 'hamlit-rails'
 gem 'html2haml'
 
+# Automatic eager loading for Active Record
+gem 'goldiloader'
+
+# N+1 queries
+gem 'bullet'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
@@ -27,9 +33,11 @@ group :development, :test do
 
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
+  gem 'active_record_doctor'
   gem 'database_cleaner-active_record'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'lol_dba'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
 end
