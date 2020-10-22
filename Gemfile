@@ -21,8 +21,11 @@ gem 'goldiloader'
 # Detect N+1 queries
 gem 'bullet'
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+# User Authentication
+gem 'clearance'
+
+# Forms
+gem 'simple_form'
 
 group :production do
   # A High Performance HTTP Server for Ruby

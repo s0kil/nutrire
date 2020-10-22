@@ -39,24 +39,29 @@
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="agoo (v2.13.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="argon2 (v2.0.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.16, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.4.8, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bullet (v6.1.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.1.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.3, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="clearance (v2.3.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.7, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="database_cleaner (v1.8.5, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="database_cleaner-active_record (v1.8.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.4.4, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="email_validator (v2.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.9.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot (v6.1.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot_rails (v6.1.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faker (v2.14.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.13.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi-compiler (v1.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="goldiloader (v3.1.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml (v5.2.0, Ruby 2.7.1) [gem]" level="application" />
@@ -113,6 +118,7 @@
     <orderEntry type="library" scope="PROVIDED" name="semantic_range (v2.3.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sexp_processor (v4.15.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shoulda-matchers (v4.4.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple_form (v5.0.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.1.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.0.2, Ruby 2.7.1) [gem]" level="application" />
@@ -147,6 +153,10 @@
         <option value="assets" />
         <option value="bullet:install" />
         <option value="channel" />
+        <option value="clearance:install" />
+        <option value="clearance:routes" />
+        <option value="clearance:specs" />
+        <option value="clearance:views" />
         <option value="controller" />
         <option value="factory_bot:model" />
         <option value="generator" />
@@ -180,6 +190,7 @@
         <option value="scaffold_controller" />
         <option value="scss:assets" />
         <option value="scss:scaffold" />
+        <option value="simple_form:install" />
         <option value="system_test" />
         <option value="task" />
         <option value="test_unit:channel" />
@@ -206,6 +217,10 @@
         <option value="assets" />
         <option value="bullet:install" />
         <option value="channel" />
+        <option value="clearance:install" />
+        <option value="clearance:routes" />
+        <option value="clearance:specs" />
+        <option value="clearance:views" />
         <option value="controller" />
         <option value="factory_bot:model" />
         <option value="generator" />
@@ -239,6 +254,7 @@
         <option value="scaffold_controller" />
         <option value="scss:assets" />
         <option value="scss:scaffold" />
+        <option value="simple_form:install" />
         <option value="system_test" />
         <option value="task" />
         <option value="test_unit:channel" />
@@ -261,26 +277,6 @@
       <RakeTaskImpl id="rake">
         <subtasks>
           <RakeTaskImpl description="List versions of all Rails frameworks and the environment" fullCommand="about" id="about" />
-          <RakeTaskImpl id="action_mailbox">
-            <subtasks>
-              <RakeTaskImpl id="ingress">
-                <subtasks>
-                  <RakeTaskImpl description="Relay an inbound email from Exim to Action Mailbox (URL and INGRESS_PASSWORD required)" fullCommand="action_mailbox:ingress:exim" id="exim" />
-                  <RakeTaskImpl description="Relay an inbound email from Postfix to Action Mailbox (URL and INGRESS_PASSWORD required)" fullCommand="action_mailbox:ingress:postfix" id="postfix" />
-                  <RakeTaskImpl description="Relay an inbound email from Qmail to Action Mailbox (URL and INGRESS_PASSWORD required)" fullCommand="action_mailbox:ingress:qmail" id="qmail" />
-                  <RakeTaskImpl description="" fullCommand="action_mailbox:ingress:environment" id="environment" />
-                </subtasks>
-              </RakeTaskImpl>
-              <RakeTaskImpl description="Copy over the migration" fullCommand="action_mailbox:install" id="install" />
-              <RakeTaskImpl description="" fullCommand="action_mailbox:copy_migrations" id="copy_migrations" />
-              <RakeTaskImpl id="install">
-                <subtasks>
-                  <RakeTaskImpl description="" fullCommand="action_mailbox:install:migrations" id="migrations" />
-                </subtasks>
-              </RakeTaskImpl>
-              <RakeTaskImpl description="" fullCommand="action_mailbox:run_installer" id="run_installer" />
-            </subtasks>
-          </RakeTaskImpl>
           <RakeTaskImpl id="action_text">
             <subtasks>
               <RakeTaskImpl description="Copy over the migration, stylesheet, and JavaScript files" fullCommand="action_text:install" id="install" />
@@ -336,6 +332,15 @@
             <subtasks>
               <RakeTaskImpl description="Lookup first-level dependencies for TEMPLATE (like messages/show or comments/_comment.html)" fullCommand="cache_digests:dependencies" id="dependencies" />
               <RakeTaskImpl description="Lookup nested dependencies for TEMPLATE (like messages/show or comments/_comment.html)" fullCommand="cache_digests:nested_dependencies" id="nested_dependencies" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="clearance_engine">
+            <subtasks>
+              <RakeTaskImpl id="install">
+                <subtasks>
+                  <RakeTaskImpl description="Copy migrations from clearance_engine to application" fullCommand="clearance_engine:install:migrations" id="migrations" />
+                </subtasks>
+              </RakeTaskImpl>
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl id="db">
@@ -450,6 +455,8 @@
           <RakeTaskImpl description="Run all specs in spec directory (excluding plugin specs)" fullCommand="spec" id="spec" />
           <RakeTaskImpl id="spec">
             <subtasks>
+              <RakeTaskImpl description="Run the code examples in spec/features" fullCommand="spec:features" id="features" />
+              <RakeTaskImpl description="Run the code examples in spec/helpers" fullCommand="spec:helpers" id="helpers" />
               <RakeTaskImpl description="Run the code examples in spec/requests" fullCommand="spec:requests" id="requests" />
               <RakeTaskImpl description="" fullCommand="spec:prepare" id="prepare" />
               <RakeTaskImpl description="" fullCommand="spec:statsetup" id="statsetup" />
