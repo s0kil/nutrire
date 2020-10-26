@@ -37,3 +37,6 @@ yarn-debug.log*
 
 # IDEA IDE
 .idea
+
+# Design Images
+app/assets/design

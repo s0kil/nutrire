@@ -24,6 +24,7 @@
       <excludeFolder url="file://$MODULE_DIR$/public/system" />
       <excludeFolder url="file://$MODULE_DIR$/components" />
       <excludeFolder url="file://$MODULE_DIR$/public/assets" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/design" />
     </content>
     <orderEntry type="jdk" jdkName="Ruby 2.7.1" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
