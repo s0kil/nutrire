@@ -1,5 +1,6 @@
 class CreateArticles < ActiveRecord::Migration[6.0]
   def change
+    # Rename Nutrient To Nutrient
     create_table :articles do |t|
       t.references :user, null: false, foreign_key: true
       t.string :title

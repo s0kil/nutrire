@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   include Clearance::User
 
-  has_many :articles, dependent: :destroy
+  has_many :nutrients, dependent: :destroy
 
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
