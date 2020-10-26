@@ -6,9 +6,12 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = user_authentication
-    = flash_message
+    = render partial: 'shared/navigation'
+    -# = flash_message
 
-    = yield
+    -# TODO: Remove Wrapper And Styles
+    %main.bg-gray-200
+      = yield

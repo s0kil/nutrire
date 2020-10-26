@@ -23,6 +23,8 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/public/system" />
       <excludeFolder url="file://$MODULE_DIR$/components" />
+      <excludeFolder url="file://$MODULE_DIR$/public/assets" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/design" />
     </content>
     <orderEntry type="jdk" jdkName="Ruby 2.7.1" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -33,6 +35,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actiontext (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="active_record_doctor (v1.7.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_record_query_trace (v1.8, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activejob (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
@@ -42,17 +45,22 @@
     <orderEntry type="library" scope="PROVIDED" name="argon2 (v2.0.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.16, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="better_errors (v2.8.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.8.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.4.8, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bullet (v6.1.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.1.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.3, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="byebug-dap (v0.1.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="clearance (v2.3.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.7, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="database_cleaner (v1.8.5, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="database_cleaner-active_record (v1.8.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="debug_inspector (v0.0.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.4.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="email_validator (v2.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.9.0, Ruby 2.7.1) [gem]" level="application" />
@@ -74,6 +82,7 @@
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.7.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marcel (v0.3.3, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="meta_request (v0.7.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mimemagic (v0.3.5, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.2, Ruby 2.7.1) [gem]" level="application" />
@@ -87,6 +96,7 @@
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.2.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v5.0.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.3, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-contrib (v2.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-proxy (v0.6.5, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v1.1.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v6.0.3.4, Ruby 2.7.1) [gem]" level="application" />
@@ -100,16 +110,17 @@
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v1.8.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.9.3, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.9.2, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.9.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.9.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v4.0.1, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.9.3, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.9.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v0.93.1, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.0.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.8.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rails (v2.8.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rake (v0.5.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rspec (v1.44.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-dap (v0.1.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.10.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby_parser (v3.15.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v6.0.0, Ruby 2.7.1) [gem]" level="application" />
@@ -123,6 +134,7 @@
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.0.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.2, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tailwindcss (v1.0.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="temple (v0.8.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, Ruby 2.7.1) [gem]" level="application" />
@@ -145,130 +157,76 @@
   <component name="RailsGeneratorsCache">
     <option name="generators">
       <list>
-        <option value="active_record:application_record" />
         <option value="active_record:migration" />
         <option value="active_record:model" />
-        <option value="active_record_doctor:add_indexes" />
-        <option value="application_record" />
-        <option value="assets" />
-        <option value="bullet:install" />
-        <option value="channel" />
-        <option value="clearance:install" />
-        <option value="clearance:routes" />
-        <option value="clearance:specs" />
-        <option value="clearance:views" />
+        <option value="active_record:observer" />
+        <option value="active_record:session_migration" />
         <option value="controller" />
-        <option value="factory_bot:model" />
+        <option value="erb:controller" />
+        <option value="erb:mailer" />
+        <option value="erb:scaffold" />
         <option value="generator" />
-        <option value="haml:controller" />
-        <option value="haml:mailer" />
-        <option value="haml:scaffold" />
         <option value="helper" />
         <option value="integration_test" />
-        <option value="job" />
-        <option value="mailbox" />
         <option value="mailer" />
+        <option value="metal" />
         <option value="migration" />
         <option value="model" />
+        <option value="model_subclass" />
+        <option value="observer" />
+        <option value="performance_test" />
+        <option value="plugin" />
         <option value="resource" />
-        <option value="rspec:channel" />
-        <option value="rspec:controller" />
-        <option value="rspec:feature" />
-        <option value="rspec:generator" />
-        <option value="rspec:helper" />
-        <option value="rspec:install" />
-        <option value="rspec:integration" />
-        <option value="rspec:job" />
-        <option value="rspec:mailbox" />
-        <option value="rspec:mailer" />
-        <option value="rspec:model" />
-        <option value="rspec:request" />
-        <option value="rspec:scaffold" />
-        <option value="rspec:system" />
-        <option value="rspec:view" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
-        <option value="scss:assets" />
-        <option value="scss:scaffold" />
-        <option value="simple_form:install" />
-        <option value="system_test" />
-        <option value="task" />
-        <option value="test_unit:channel" />
+        <option value="session_migration" />
+        <option value="stylesheets" />
         <option value="test_unit:controller" />
-        <option value="test_unit:generator" />
         <option value="test_unit:helper" />
         <option value="test_unit:integration" />
-        <option value="test_unit:job" />
-        <option value="test_unit:mailbox" />
         <option value="test_unit:mailer" />
         <option value="test_unit:model" />
+        <option value="test_unit:observer" />
+        <option value="test_unit:performance" />
         <option value="test_unit:plugin" />
         <option value="test_unit:scaffold" />
-        <option value="test_unit:system" />
       </list>
     </option>
     <option name="myGenerators">
       <list>
-        <option value="active_record:application_record" />
         <option value="active_record:migration" />
         <option value="active_record:model" />
-        <option value="active_record_doctor:add_indexes" />
-        <option value="application_record" />
-        <option value="assets" />
-        <option value="bullet:install" />
-        <option value="channel" />
-        <option value="clearance:install" />
-        <option value="clearance:routes" />
-        <option value="clearance:specs" />
-        <option value="clearance:views" />
+        <option value="active_record:observer" />
+        <option value="active_record:session_migration" />
         <option value="controller" />
-        <option value="factory_bot:model" />
+        <option value="erb:controller" />
+        <option value="erb:mailer" />
+        <option value="erb:scaffold" />
         <option value="generator" />
-        <option value="haml:controller" />
-        <option value="haml:mailer" />
-        <option value="haml:scaffold" />
         <option value="helper" />
         <option value="integration_test" />
-        <option value="job" />
-        <option value="mailbox" />
         <option value="mailer" />
+        <option value="metal" />
         <option value="migration" />
         <option value="model" />
+        <option value="model_subclass" />
+        <option value="observer" />
+        <option value="performance_test" />
+        <option value="plugin" />
         <option value="resource" />
-        <option value="rspec:channel" />
-        <option value="rspec:controller" />
-        <option value="rspec:feature" />
-        <option value="rspec:generator" />
-        <option value="rspec:helper" />
-        <option value="rspec:install" />
-        <option value="rspec:integration" />
-        <option value="rspec:job" />
-        <option value="rspec:mailbox" />
-        <option value="rspec:mailer" />
-        <option value="rspec:model" />
-        <option value="rspec:request" />
-        <option value="rspec:scaffold" />
-        <option value="rspec:system" />
-        <option value="rspec:view" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
-        <option value="scss:assets" />
-        <option value="scss:scaffold" />
-        <option value="simple_form:install" />
-        <option value="system_test" />
-        <option value="task" />
-        <option value="test_unit:channel" />
+        <option value="session_migration" />
+        <option value="stylesheets" />
         <option value="test_unit:controller" />
-        <option value="test_unit:generator" />
         <option value="test_unit:helper" />
         <option value="test_unit:integration" />
-        <option value="test_unit:job" />
-        <option value="test_unit:mailbox" />
         <option value="test_unit:mailer" />
         <option value="test_unit:model" />
+        <option value="test_unit:observer" />
+        <option value="test_unit:performance" />
         <option value="test_unit:plugin" />
         <option value="test_unit:scaffold" />
-        <option value="test_unit:system" />
       </list>
     </option>
   </component>
@@ -455,8 +413,6 @@
           <RakeTaskImpl description="Run all specs in spec directory (excluding plugin specs)" fullCommand="spec" id="spec" />
           <RakeTaskImpl id="spec">
             <subtasks>
-              <RakeTaskImpl description="Run the code examples in spec/features" fullCommand="spec:features" id="features" />
-              <RakeTaskImpl description="Run the code examples in spec/helpers" fullCommand="spec:helpers" id="helpers" />
               <RakeTaskImpl description="Run the code examples in spec/requests" fullCommand="spec:requests" id="requests" />
               <RakeTaskImpl description="" fullCommand="spec:prepare" id="prepare" />
               <RakeTaskImpl description="" fullCommand="spec:statsetup" id="statsetup" />

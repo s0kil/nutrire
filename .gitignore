@@ -34,3 +34,9 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# IDEA IDE
+.idea
+
+# Design Images
+app/assets/design

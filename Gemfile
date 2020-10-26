@@ -27,6 +27,9 @@ gem 'clearance'
 # Forms
 gem 'simple_form'
 
+# Tailwind CSS
+gem 'tailwindcss'
+
 group :production do
   # A High Performance HTTP Server for Ruby
   gem 'agoo'
@@ -35,7 +38,13 @@ end
 group :development, :test do
   gem 'puma'
 
+  # Debug
+  gem 'active_record_query_trace'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'byebug-dap'
+  gem 'meta_request'
 
   gem 'active_record_doctor'
   gem 'database_cleaner-active_record'
