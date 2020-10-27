@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get "/users" => redirect('/sign_up')
   get "/nutrients" => redirect('/nutrients/new')
 
+  get '/category/:slug' => "categories#show", param: :slug, as: :category
+
   resources :nutrients, only: [:new, :create, :index]
   resources :categories, only: [:new, :create]
 

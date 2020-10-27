@@ -6,4 +6,22 @@ module ApplicationHelper
       end
     end
   end
+
+  def categories_navigation
+    categories = Category.all
+
+    links = categories.reduce('') do |html, category|
+      html << %(
+        <li class="uppercase">
+          #{link_to(category.title, category_path(category.title), class: 'hover:underline')}
+        </li>
+      )
+    end
+
+    sanitize(
+      %(
+        <ul class="flex space-x-4">#{links}</ul>
+      ).delete("\n")
+    )
+  end
 end

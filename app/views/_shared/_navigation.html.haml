@@ -5,15 +5,7 @@
       %h1{class: 'text-4xl self-end'}
         = link_to 'Nutrire', root_path, class: 'hover:underline'
   %div{class: 'flex-1 self-center flex justify-center'}
-    %ul{class: 'flex space-x-4'}
-      %li{class: 'uppercase'}
-        %a{class: 'hover:underline', href: ''} Sprint
-      %li{class: 'uppercase'}
-        %a{class: 'hover:underline', href: ''} Stable
-      %li{class: 'uppercase'}
-        %a{class: 'hover:underline', href: ''} Salvage
-      %li{class: 'uppercase'}
-        %a{class: 'hover:underline', href: ''} Scamper
+    = categories_navigation
   %div{class: 'flex-1 self-center flex justify-center'}
     - if signed_in?
       = render partial: '_shared/menu'

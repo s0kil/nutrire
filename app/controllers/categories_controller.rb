@@ -13,6 +13,13 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def show
+    @category = Category.find_by(title: params[:slug])
+    redirect_to '/404' if @category.nil?
+
+    @nutrients = Nutrient.where(category: @category)
+  end
+
   private
 
   def category_params
