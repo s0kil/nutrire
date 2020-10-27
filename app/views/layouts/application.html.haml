@@ -9,9 +9,9 @@
     = stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = render partial: 'shared/navigation'
+    = render partial: '_shared/navigation'
     -# = flash_message
 
-    -# TODO: Remove Wrapper And Styles
-    %main.bg-gray-200
+    -# TODO: Width 11/12 on large display
+    %main{class: 'w-8/12 bg-gray-200 m-auto mt-10'}
       = yield

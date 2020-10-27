@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get "/sign_up" => "users#new", as: "sign_up"
 
   get "/users" => redirect('/sign_up')
+  get "/nutrients" => redirect('/nutrients/new')
+
+  resources :nutrients, only: [:new, :create, :index]
+  resources :categories, only: [:new, :create]
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'home#index'

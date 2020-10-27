@@ -1,0 +1,25 @@
+%nav{class: 'flex h-20'}
+  %div{class: 'flex-1 self-center flex justify-center'}
+    %div{class: 'flex flex-row'}
+      = image_tag('logo_transparent.png', class: 'h-16')
+      %h1{class: 'text-4xl self-end'}
+        = link_to 'Nutrire', root_path, class: 'hover:underline'
+  %div{class: 'flex-1 self-center flex justify-center'}
+    %ul{class: 'flex space-x-4'}
+      %li{class: 'uppercase'}
+        %a{class: 'hover:underline', href: ''} Sprint
+      %li{class: 'uppercase'}
+        %a{class: 'hover:underline', href: ''} Stable
+      %li{class: 'uppercase'}
+        %a{class: 'hover:underline', href: ''} Salvage
+      %li{class: 'uppercase'}
+        %a{class: 'hover:underline', href: ''} Scamper
+  %div{class: 'flex-1 self-center flex justify-center'}
+    - if signed_in?
+      = render partial: '_shared/menu'
+    - else
+      %div{class: 'border border-black flex items-center'}
+        = link_to 'Login', sign_in_path, class: 'block px-4 py-2 text-sm text-black hover:bg-orange-500'
+        %span
+          |
+        = link_to 'Register', sign_up_path, class: 'block px-4 py-2 text-sm text-black hover:bg-orange-500'

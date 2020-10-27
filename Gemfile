@@ -30,6 +30,9 @@ gem 'simple_form'
 # Tailwind CSS
 gem 'tailwindcss'
 
+# Image Uploads
+gem 'carrierwave'
+
 group :production do
   # A High Performance HTTP Server for Ruby
   gem 'agoo'
