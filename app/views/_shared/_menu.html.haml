@@ -1,0 +1,21 @@
+%div{class: 'flex items-center relative'}
+  %button{class: 'py-2 px-4 capitalize tracking-wide text-black border border-black font-medium focus:outline-none'}
+    = current_user.name
+  %span{class: 'border'}
+  %div{class: 'relative'}
+    %button{id: 'dropdown-toggle', class: 'py-2 px-4 capitalize tracking-wide border border-black text-black font-medium hover:bg-orange-500 focus:outline-none'}
+      %svg{class: 'h-6 w-6 text-black', xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke:'currentColor'}
+        %path{'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z'}
+  -#%div{class: 'fixed inset-0 h-full w-full z-10'}
+  %div{id: 'user-menu', class: 'absolute hidden inset-x-0 top-0 mt-12 border border-black bg-white overflow-hidden shadow-xl z-10'}
+    %a{class: 'block px-4 py-2 text-sm text-black border-b hover:bg-orange-500', href: new_nutrient_path}
+      New Nutritional Guide
+    %a{class: 'block px-4 py-2 text-sm text-black border-b hover:bg-orange-500', href: new_category_path}
+      Create Category
+    %a{class: 'block px-4 py-2 text-sm text-black border-b hover:bg-orange-500', href: sign_out_path, 'data-method': 'delete'}
+      Sign Out
+
+:javascript
+  document.getElementById('dropdown-toggle').addEventListener('click', () => {
+    document.getElementById('user-menu').classList.toggle('hidden')
+  })

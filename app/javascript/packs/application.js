@@ -15,3 +15,6 @@ require("@rails/activestorage").start()
 // const imagePath = (name) => images(name, true)
 
 import "../css/application.css"
+
+require("trix")
+require("@rails/actiontext")
