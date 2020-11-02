@@ -7,6 +7,10 @@ module ApplicationHelper
     end
   end
 
+  def image_or_placeholder(url, size = 500)
+    url || "https://picsum.photos/#{size}"
+  end
+
   def categories_navigation
     categories = Category.all
 

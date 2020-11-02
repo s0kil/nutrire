@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2020_10_27_165930) do
 
   create_table "categories", force: :cascade do |t|
     t.string "title"
-    t.decimal "priority"
+    t.integer "priority"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["title"], name: "index_categories_on_title", unique: true

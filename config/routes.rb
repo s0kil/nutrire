@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   get '/category/:slug' => "categories#show", param: :slug, as: :category
 
-  resources :nutrients, only: [:new, :create, :index]
+  resources :nutrients, only: [:new, :create, :index, :show]
   resources :categories, only: [:new, :create]
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

@@ -1,2 +1,11 @@
-%h1
-  Home Page
+%div{class: 'grid grid-cols-4 m-auto'}
+  - @nutrients.each do |nutrient|
+    %div{class: 'relative'}
+      %div
+        = image_tag(image_or_placeholder(url = nutrient.image.url) + "?random=#{nutrient.id}", class: 'object-cover')
+      %div{class: 'absolute top-0 py-6 pl-4 pr-4 w-full', style: 'background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0))'}
+        %h1{class: 'text-xl text-white font-bold'}
+          = link_to(nutrient.category.title, "/category/#{nutrient.category.title}", class: 'border-b-2 border-yellow-400')
+      %div{class: 'absolute bottom-0 py-6 pl-4 pr-4 w-full', style: 'background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))'}
+        %h1{class: 'text-lg text-white font-bold'}
+          = link_to(nutrient.title, nutrient_path(nutrient.id))

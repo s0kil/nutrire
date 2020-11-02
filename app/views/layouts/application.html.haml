@@ -1,5 +1,5 @@
 !!!
-%html
+%html{class: 'w-full h-full'}
   %head
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %title Nutrire
@@ -8,9 +8,10 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
+  %body{class: 'w-full h-full'}
     = render partial: '_shared/navigation'
-    -# = flash_message
 
-    %main
+    %main{class: 'pt-20'}
       = yield
+
+    = render partial: '_shared/footer'

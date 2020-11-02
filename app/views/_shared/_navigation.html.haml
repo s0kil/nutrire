@@ -1,12 +1,12 @@
-%nav{class: 'flex h-20'}
-  %div{class: 'flex-1 self-center flex justify-center'}
+%nav{class: 'flex h-20 pl-6 pr-6 fixed w-full bg-white z-10'}
+  %div{class: 'self-center flex'}
     %div{class: 'flex flex-row'}
       = image_tag('logo_transparent.png', class: 'h-16')
       %h1{class: 'text-4xl self-end'}
         = link_to 'Nutrire', root_path, class: 'hover:underline'
   %div{class: 'flex-1 self-center flex justify-center'}
     = categories_navigation
-  %div{class: 'flex-1 self-center flex justify-center'}
+  %div{class: 'self-center flex'}
     - if signed_in?
       = render partial: '_shared/menu'
     - else

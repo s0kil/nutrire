@@ -1,0 +1,7 @@
+%div{class: 'grid grid-cols-2'}
+  %div{class: 'mr-4'}
+    = image_tag(image_or_placeholder(nutrient.image.url) + "?random=#{nutrient.id}")
+  %div
+    %h1{class: 'text-xl'}
+      = link_to(nutrient.title, nutrient_path(nutrient.id))
+    = nutrient.text
