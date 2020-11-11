@@ -80,7 +80,7 @@
     <orderEntry type="library" scope="PROVIDED" name="hamlit-rails (v0.2.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="html2haml (v2.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.5, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="image_processing (v1.12.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="image_processing (v1.12.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.2.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="lol_dba (v2.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.7.0, Ruby 2.7.1) [gem]" level="application" />
@@ -89,14 +89,14 @@
     <orderEntry type="library" scope="PROVIDED" name="meta_request (v0.7.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mimemagic (v0.3.5, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.10.1, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.11.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.14.2, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.3.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.4, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.10, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="parallel (v1.19.2, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parallel (v1.20.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v2.7.2.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.2.3, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v4.0.6, Ruby 2.7.1) [gem]" level="application" />
@@ -121,7 +121,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v4.0.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.10.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v0.93.1, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.1.0, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.1.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.8.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rails (v2.8.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rake (v0.5.1, Ruby 2.7.1) [gem]" level="application" />
@@ -148,7 +148,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.10, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v5.2.1, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, Ruby 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.7, Ruby 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.8, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v1.7.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uniform_notifier (v1.13.0, Ruby 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.0.4, Ruby 2.7.1) [gem]" level="application" />
