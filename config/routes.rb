@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   get "/users" => redirect('/sign_up')
   get "/nutrients" => redirect('/nutrients/new')
 
-  resources :nutrients, only: [:new, :create, :index]
+  get '/category/:slug' => "categories#show", param: :slug, as: :category
+
+  resources :nutrients, only: [:new, :create, :index, :show]
   resources :categories, only: [:new, :create]
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

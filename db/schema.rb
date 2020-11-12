@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_27_162642) do
+ActiveRecord::Schema.define(version: 2020_10_27_165930) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2020_10_27_162642) do
 
   create_table "categories", force: :cascade do |t|
     t.string "title"
-    t.decimal "priority"
+    t.integer "priority"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["title"], name: "index_categories_on_title", unique: true
@@ -80,7 +80,18 @@ ActiveRecord::Schema.define(version: 2020_10_27_162642) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
+  create_table "votes", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "nutrient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["nutrient_id"], name: "index_votes_on_nutrient_id"
+    t.index ["user_id"], name: "index_votes_on_user_id"
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "nutrients", "categories"
   add_foreign_key "nutrients", "users"
+  add_foreign_key "votes", "nutrients"
+  add_foreign_key "votes", "users"
 end

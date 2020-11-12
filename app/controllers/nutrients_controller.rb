@@ -11,13 +11,19 @@ class NutrientsController < ApplicationController
   def create
     @nutrient = Nutrient.new(nutrient_params)
     @nutrient.author = current_user
-    @nutrient.category = Category.find_by(id: params[:nutrient][:category])
+    category = Category.find_by(id: params[:nutrient][:category])
+    @nutrient.category = category
 
     if @nutrient.save
-      redirect_to root_path
+      redirect_to "/category/#{category.title}"
     else
       render 'new'
     end
+  end
+
+  def show
+    @nutrient = Nutrient.find(params[:id])
+    @author = @nutrient.author
   end
 
   private

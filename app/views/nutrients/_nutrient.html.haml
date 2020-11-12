@@ -1,9 +1,3 @@
-%div
-  %h1{class: 'mb-6'}
-    = nutrient.title
-
-  %span
-  -#  TODO: Categories
-
-  %p
-    = nutrient.text
+%div{class: 'grid grid-cols-2'}
+  = image_tag(image_or_placeholder(nutrient.image.url, size = 800))
+  = nutrient.text

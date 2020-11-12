@@ -14,11 +14,25 @@
  *= require_self
  */
 
-nav#navigation {
-  height: 80px;
-  border: 1px solid brown;
+form {
+  input,
+  label {
+    display: block;
+  }
 
-  .brand-name {
-    color: #f76108;
+  input {
+    border: 1px solid black;
+  }
+
+  div {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  input[type='submit'] {
+    padding: 5px 10px;
+  }
+
+  span.error {
+    color: darkred;
   }
 }

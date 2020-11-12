@@ -1,8 +1,6 @@
 = simple_form_for @nutrient do |form|
   = form.input :title
   = form.input :image, as: :file
-
-  = form.label :category, 'Select Category'
   = form.input :category, as: :select, collection: @categories
 
   %div{class: 'mt-4 mb-4'}
