@@ -12,6 +12,8 @@
 - Factory Bot
 - Haml
 - Postgres
+- Tailwind CSS
+- Clearance Auth
 
 ## Getting Started
 
