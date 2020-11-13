@@ -1,6 +1,15 @@
 module VotesHelper
   def upvote_button(nutrient_id, user_id = current_user.id)
-    button_to 'upvote', { controller: :votes, action: :create, user_id: user_id, nutrient_id: nutrient_id }, method: :post
+    button_to(
+      'upvote',
+      {
+        controller: :votes,
+        action: :create,
+        user_id: user_id,
+        nutrient_id: nutrient_id
+      },
+      method: :post
+    )
   end
 
   def downvote_button(vote_id)

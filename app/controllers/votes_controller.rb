@@ -9,10 +9,7 @@ class VotesController < ApplicationController
     return if Vote.find_by(user: user, nutrient: nutrient)
 
     vote = Vote.new(user: user, nutrient: nutrient)
-    if vote.save
-      reload_page
-    end
-
+    reload_page if vote.save
   rescue ActiveRecord::RecordNotFound
     # Ignored
   end
