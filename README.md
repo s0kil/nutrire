@@ -63,7 +63,7 @@ TBA
 **Daniel Sokil**
 
 - Github: [@danielsokil](https://github.com/danielsokil)
-- Linkedin: [@danielsokil](www.linkedin.com/in/daniel-sokil)
+- Linkedin: [@danielsokil](https://www.linkedin.com/in/daniel-sokil)
 
 ## Contributing
 
