@@ -1,7 +1,8 @@
 class User < ApplicationRecord
   include Clearance::User
 
-  has_many :nutrients, dependent: :destroy
+  has_many :nutrients, dependent: :nullify
+  has_many :votes, dependent: :nullify
 
   validates :name, presence: true
   validates :password, presence: true

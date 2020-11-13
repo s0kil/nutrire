@@ -1,4 +1,6 @@
 class NutrientsController < ApplicationController
+  before_action :require_login, only: %i[create]
+
   def index
     @nutrients = Nutrient.all
   end

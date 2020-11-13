@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+  before_action :require_login, only: %i[create]
+
   def new
     @category = Category.new
   end
@@ -17,7 +19,7 @@ class CategoriesController < ApplicationController
     @category = Category.find_by(title: params[:slug])
     redirect_to '/404' if @category.nil?
 
-    @nutrients = Nutrient.where(category: @category)
+    @nutrients = Nutrient.where(category: @category).includes(:votes)
   end
 
   private

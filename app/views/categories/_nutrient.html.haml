@@ -4,8 +4,10 @@
 
 %div{class: 'grid grid-cols-2'}
   %div{class: '', style: "order: #{row_order[:image]}"}
-    = image_tag(image_or_placeholder(nutrient.image.url) + "?random=#{nutrient.id}")
-  %div{class: 'm-6', style: "order: #{row_order[:text]}"}
+    = image_tag(image_or_placeholder({ url: nutrient.image.url, seed: "nutrient-#{nutrient.id}" }))
+  %div{class: 'relative m-6', style: "order: #{row_order[:text]}"}
     %h1{class: 'text-xl'}
       = link_to(nutrient.title, nutrient_path(nutrient.id))
     = nutrient.text
+    %div{class: 'absolute bottom-0'}
+      = voting_button(nutrient)
