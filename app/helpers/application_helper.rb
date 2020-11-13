@@ -7,8 +7,14 @@ module ApplicationHelper
     end
   end
 
-  def image_or_placeholder(url, size = 500)
-    url || "https://picsum.photos/#{size}"
+  def image_or_placeholder(options)
+    url = options[:url]
+    size = options[:size] || 500
+    seed = options[:seed] || "image-#{rand(1..1000)}"
+
+    return url unless url.nil?
+
+    "https://picsum.photos/seed/#{seed}/#{size}"
   end
 
   def categories_navigation

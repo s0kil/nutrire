@@ -6,6 +6,7 @@ class HomeController < ApplicationController
         .includes(:category)
         .sort_by { |n| n.category.priority }
 
-    # TODO: Also Query Most Voted
+    @most_voted_nutrient =
+      Nutrient.find(Vote.nutrient_id_with_most_votes)
   end
 end

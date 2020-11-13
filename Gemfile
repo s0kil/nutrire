@@ -71,3 +71,5 @@ group :development do
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
 end
+
+gem "iri", "~> 0.5.0"
