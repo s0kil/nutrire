@@ -1,0 +1,9 @@
+%div{class: 'relative'}
+  %div
+    = image_tag(image_or_placeholder({ url: nutrient.image.url, seed: "nutrient-#{nutrient.id}" }))
+  %div{class: 'absolute top-0 py-6 pl-4 pr-4 w-full', style: 'background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0))'}
+    %h1{class: 'text-xl text-white font-bold'}
+      = link_to(nutrient.category.title, "/category/#{nutrient.category.title}", class: 'border-b-2 border-yellow-400')
+  %div{class: 'absolute bottom-0 py-6 pl-4 pr-4 w-full', style: 'background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))'}
+    %h1{class: 'text-lg text-white font-bold'}
+      = link_to(nutrient.title, nutrient_path(nutrient.id))

@@ -7,6 +7,6 @@ class HomeController < ApplicationController
         .sort_by { |n| n.category.priority }
 
     @most_voted_nutrient =
-      Nutrient.find(Vote.nutrient_id_with_most_votes)
+      (Nutrient.find(Vote.nutrient_id_with_most_votes) if Vote.count.positive?)
   end
 end
