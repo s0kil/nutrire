@@ -23,9 +23,6 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/public/system" />
       <excludeFolder url="file://$MODULE_DIR$/components" />
-      <excludeFolder url="file://$MODULE_DIR$/app/assets/design" />
-      <excludeFolder url="file://$MODULE_DIR$/public/assets" />
-      <excludeFolder url="file://$MODULE_DIR$/public/uploads" />
     </content>
     <orderEntry type="jdk" jdkName="asdf: 2.7.2" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
