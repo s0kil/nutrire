@@ -1,22 +1,14 @@
 -# Most Popular
-%section{class: 'grid grid-rows-2 grid grid-cols-1'}
-  - background_image_url = image_or_placeholder({ url: @most_voted_nutrient.image.url, size: '4000/2000', seed: "popular-nutrient-#{@most_voted_nutrient.id}" })
-  %div{class: 'relative bg-cover bg-center bg-no-repeat', style: "background-image: url(#{background_image_url})"}
-    %div{class: 'absolute bottom-0 py-6 pl-4 pr-4 font-bold'}
-      %h1{class: 'text-2xl text-orange-600'}
-        = link_to(@most_voted_nutrient.title, nutrient_path(@most_voted_nutrient.id))
-      %div{class: 'text-white text-sm'}
-        = @most_voted_nutrient.text
+- unless @most_voted_nutrient.nil?
+  %section{class: 'grid grid-rows-2 grid grid-cols-1'}
+    - background_image_url = image_or_placeholder({ url: @most_voted_nutrient.image.url, size: '4000/2000', seed: "popular-nutrient-#{@most_voted_nutrient.id}" })
+    %div{class: 'relative bg-cover bg-center bg-no-repeat', style: "background-image: url(#{background_image_url})"}
+      %div{class: 'absolute bottom-0 py-6 pl-4 pr-4 font-bold'}
+        %h1{class: 'text-2xl text-orange-600'}
+          = link_to(@most_voted_nutrient.title, nutrient_path(@most_voted_nutrient.id))
+        %div{class: 'text-white text-sm'}
+          = @most_voted_nutrient.text
 
   -# Categories
   %div{class: 'grid grid-cols-4 m-auto'}
-    - @nutrients.each do |nutrient|
-      %div{class: 'relative'}
-        %div
-          = image_tag(image_or_placeholder({ url: nutrient.image.url, seed: "nutrient-#{nutrient.id}" }))
-        %div{class: 'absolute top-0 py-6 pl-4 pr-4 w-full', style: 'background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0))'}
-          %h1{class: 'text-xl text-white font-bold'}
-            = link_to(nutrient.category.title, "/category/#{nutrient.category.title}", class: 'border-b-2 border-yellow-400')
-        %div{class: 'absolute bottom-0 py-6 pl-4 pr-4 w-full', style: 'background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))'}
-          %h1{class: 'text-lg text-white font-bold'}
-            = link_to(nutrient.title, nutrient_path(nutrient.id))
+    = render partial: 'home/nutrient', collection: @nutrients

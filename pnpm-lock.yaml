@@ -1707,7 +1707,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001158
       colorette: 1.2.1
-      electron-to-chromium: 1.3.597
+      electron-to-chromium: 1.3.598
       escalade: 3.1.1
       node-releases: 1.1.67
     dev: false
@@ -2789,10 +2789,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.597:
+  /electron-to-chromium/1.3.598:
     dev: false
     resolution:
-      integrity: sha512-VJI21MucKaqyFw0oe3j9BIg+nDF4MHzUZAmUwZzrxho+s8zPCD13Fds07Rgu+MTtAadO4tYTKFdAUksKYUyIJw==
+      integrity: sha512-G5Ztk23/ubLYVPxPXnB1uu105uzIPd4xB/D8ld8x1GaSC9+vU9NZL16nYZya8H77/7CCKKN7dArzJL3pBs8N7A==
   /elliptic/6.5.3:
     dependencies:
       bn.js: 4.11.9
