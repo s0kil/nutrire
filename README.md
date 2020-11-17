@@ -14,6 +14,10 @@
 - Postgres
 - Tailwind CSS
 - Clearance Auth
+- Deployment
+    - [Hatchbox](https://www.hatchbox.io)
+    - [Hatchbox GitHub Action](https://github.com/hatchboxio/github-hatchbox-deploy-action)
+    - [Vultr](https://www.vultr.com)
 
 ## Getting Started
 
