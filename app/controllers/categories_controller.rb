@@ -19,7 +19,8 @@ class CategoriesController < ApplicationController
     @category = Category.find_by(title: params[:slug])
     redirect_to '/404' if @category.nil?
 
-    @nutrients = Nutrient.where(category: @category).includes(:votes)
+    # https://edgeguides.rubyonrails.org/action_text_overview.html#avoid-n-1-queries
+    @nutrients = Nutrient.where(category: @category).includes(:votes).with_rich_text_text
   end
 
   private

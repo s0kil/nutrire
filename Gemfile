@@ -19,6 +19,7 @@ gem 'html2haml'
 gem 'goldiloader'
 
 # Detect N+1 queries
+# Does not yet support Rails 6.1.0.rc1
 gem 'bullet'
 
 # User Authentication
@@ -32,6 +33,9 @@ gem 'tailwindcss'
 
 # Image Uploads
 gem 'carrierwave'
+
+# URI Builder
+gem 'iri'
 
 group :production do
   # A High Performance HTTP Server for Ruby
@@ -71,5 +75,3 @@ group :development do
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
 end
-
-gem 'iri', '~> 0.5.0'

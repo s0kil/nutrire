@@ -11,9 +11,9 @@ class NutrientsController < ApplicationController
   end
 
   def create
-    @nutrient = Nutrient.new(nutrient_params)
+    @nutrient = Nutrient.new(nutrient_params.slice(:title, :text, :image))
     @nutrient.author = current_user
-    category = Category.find_by(id: params[:nutrient][:category])
+    category = Category.find_by(id: nutrient_params[:category])
     @nutrient.category = category
 
     if @nutrient.save
@@ -24,13 +24,13 @@ class NutrientsController < ApplicationController
   end
 
   def show
-    @nutrient = Nutrient.find(params[:id])
+    @nutrient = Nutrient.find_by(id: params[:id])
     @author = @nutrient.author
   end
 
   private
 
   def nutrient_params
-    params.require(:nutrient).permit(:title, :text, :image)
+    params.require(:nutrient).permit(:title, :text, :image, :category)
   end
 end
