@@ -6,7 +6,11 @@ require 'rspec/rails'
 
 require 'faker'
 
-Dir[Rails.root.join('spec/support/**/*/*.rb')].sort.each { |f| require f }
+# Support
+require_relative './support/clearance'
+require_relative './support/factory_bot'
+require_relative './support/database_cleaner'
+require_relative './support/shoulda_matchers'
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
