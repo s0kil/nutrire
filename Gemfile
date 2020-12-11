@@ -2,13 +2,13 @@ source 'https://rubygems.org'
 
 ruby '2.7.2'
 
+gem 'active_record_query_trace'
 gem 'bootsnap', require: false
 gem 'pg'
 gem 'rails'
 gem 'sass-rails'
 gem 'turbolinks'
 gem 'webpacker'
-gem 'active_record_query_trace'
 
 # Haml Templating
 gem 'hamlit'
