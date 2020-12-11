@@ -8,6 +8,7 @@ gem 'rails'
 gem 'sass-rails'
 gem 'turbolinks'
 gem 'webpacker'
+gem 'active_record_query_trace'
 
 # Haml Templating
 gem 'hamlit'
@@ -46,7 +47,6 @@ group :development, :test do
   gem 'puma'
 
   # Debug
-  gem 'active_record_query_trace'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
