@@ -41,3 +41,5 @@ yarn-debug.log*
 
 # Design Images
 app/assets/design
+
+/config/credentials/production.key

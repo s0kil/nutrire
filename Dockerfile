@@ -8,6 +8,11 @@ RUN apt-get update && apt-get install -qq -y --no-install-recommends build-essen
 RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get update && apt-get install -qq -y --no-install-recommends nodejs yarn postgresql-client
 
+# https://blog.engineyard.com/using-docker-for-rails
+ENV RAILS_ENV production
+ENV RAILS_SERVE_STATIC_FILES true
+ENV RAILS_LOG_TO_STDOUT true
+
 # Install dependencies
 RUN mkdir /app
 WORKDIR /app

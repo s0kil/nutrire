@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 ruby '2.7.2'
 
-gem 'active_record_query_trace'
 gem 'bootsnap', require: false
 gem 'pg'
 gem 'rails'
@@ -47,6 +46,7 @@ group :development, :test do
   gem 'puma'
 
   # Debug
+  gem 'active_record_query_trace'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
