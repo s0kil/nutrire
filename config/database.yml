@@ -80,6 +80,9 @@ test:
 #
 production:
   <<: *default
-  database: nutrire_production
-  username: nutrire
-  password: <%= ENV['NUTRIRE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['QOVERY_DATABASE_MY_DB_CONNECTION_URI'] %>
+  port: <%= ENV['QOVERY_DATABASE_MY_DB_PORT'] %>
+  host: <%= ENV['QOVERY_DATABASE_MY_DB_HOST'] %>
+  database: <%= ENV['QOVERY_DATABASE_MY_DB_NAME'] %>
+  username: <%= ENV['QOVERY_DATABASE_MY_DB_USERNAME'] %>
+  password: <%= ENV['QOVERY_DATABASE_MY_DB_PASSWORD'] %>

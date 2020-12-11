@@ -1,0 +1,21 @@
+application:
+  name: nutrire
+  project: nutrire
+  organization: QoveryCommunity
+  storage:
+    - name: nutrire_storage
+      size: 10
+      type: fast_ssd
+      mount_point: /mnt/nutrire_storage
+
+databases:
+  - type: postgresql
+    version: 13
+    name: nutrire_production
+
+routers:
+  - name: main-nutrire
+    routes:
+      - application_name: nutrire
+        paths:
+          - /
