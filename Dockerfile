@@ -17,7 +17,7 @@ COPY Gemfile.lock /app/Gemfile.lock
 COPY package.json /app/package.json
 
 RUN gem install bundler:2.2.0
-RUN bundle install
+RUN bundle install --without development test
 
 COPY . /app
 
