@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe Nutrient, type: :model do
   it 'Creates A Valid Nutrient' do
     nutrient = build(:nutrient)

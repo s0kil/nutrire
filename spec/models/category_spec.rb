@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe Category, type: :model do
   it 'Creates Valid Category' do
     category = build(:category)
