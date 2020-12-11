@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe Vote, type: :model do
   it 'Creates Valid Vote' do
     # We Need An Unique User
