@@ -54,6 +54,7 @@ group :development, :test do
   gem 'meta_request'
 
   gem 'active_record_doctor'
+  gem 'capybara'
   gem 'database_cleaner-active_record'
   gem 'factory_bot_rails'
   gem 'faker'
