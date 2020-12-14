@@ -10,7 +10,7 @@ application:
 
 databases:
   - type: postgresql
-    version: 13
+    version: 12
     name: nutrire_production
 
 routers:
