@@ -47,19 +47,23 @@ group :development, :test do
 
   # Debug
   gem 'active_record_query_trace'
+  gem 'apparition'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'byebug-dap'
-  gem 'meta_request'
-
+  # Does Not Work With Rails v6.1.0
+  # gem 'meta_request'
   gem 'active_record_doctor'
+  gem 'capybara'
   gem 'database_cleaner-active_record'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'lol_dba'
   gem 'rspec-rails'
+  gem 'selenium-webdriver'
   gem 'shoulda-matchers'
+  gem 'webdrivers', require: false
 end
 
 group :development do

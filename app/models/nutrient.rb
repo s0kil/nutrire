@@ -4,8 +4,8 @@ class Nutrient < ApplicationRecord
 
   has_many :votes, dependent: :nullify
 
-  validates :user_id, presence: true
   validates :title, presence: true
+  validates :user_id, presence: true
   validates :category_id, presence: true
 
   has_rich_text :text
