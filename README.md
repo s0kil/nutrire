@@ -2,7 +2,7 @@
 
 > Rails capstone project at Microverse
 
-#### [Live Demo](http://rz7w.hatchboxapp.com/)
+#### [Live Demo](https://nutrire-298623.ue.r.appspot.com/)
 
 ## Built With
 

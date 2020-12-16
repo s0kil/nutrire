@@ -43,3 +43,7 @@ yarn-debug.log*
 app/assets/design
 
 /config/credentials/production.key
+.rake_tasks~
+
+# Google Cloud Platform Config
+app.yaml

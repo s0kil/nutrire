@@ -40,6 +40,8 @@ gem 'iri'
 group :production do
   # A High Performance HTTP Server for Ruby
   gem 'agoo'
+  # Google Cloud Platform
+  gem 'appengine'
 end
 
 group :development, :test do
