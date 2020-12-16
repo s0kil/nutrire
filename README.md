@@ -17,9 +17,7 @@
 - Tailwind CSS
 - Clearance Auth
 - Deployment
-    - [Hatchbox](https://www.hatchbox.io)
-    - [Hatchbox GitHub Action](https://github.com/hatchboxio/github-hatchbox-deploy-action)
-    - [Vultr](https://www.vultr.com)
+    - [Google Cloud Platform](https://cloud.google.com/ruby/rails/using-cloudsql-postgres)
 
 ## Getting Started
 
