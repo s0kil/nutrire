@@ -20,7 +20,10 @@ class CategoriesController < ApplicationController
     redirect_to '/404' if @category.nil?
 
     # https://edgeguides.rubyonrails.org/action_text_overview.html#avoid-n-1-queries
-    @nutrients = Nutrient.where(category: @category).includes(:votes, :rich_text_text)
+    includes = [:rich_text_text, (:votes if signed_in?)]
+    includes.push(:votes) if signed_in? # Only Signed In Users Can Vote
+
+    @nutrients = Nutrient.all.where(category: @category).includes(includes)
   end
 
   private
