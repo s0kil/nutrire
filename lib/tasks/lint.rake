@@ -8,8 +8,8 @@ task lint: :environment do
   puts '> rubocop'
   execute('rubocop -A')
 
-  # puts '> lol_dba'
-  # execute('rails db:find_indexes')
+  puts '> lol_dba'
+  execute('rails db:find_indexes')
 
   # puts '> active_record_doctor'
   # execute('rails active_record_doctor:extraneous_indexes')

@@ -19,7 +19,6 @@ gem 'html2haml'
 gem 'goldiloader'
 
 # Detect N+1 queries
-# Does not yet support Rails 6.1.0.rc1
 gem 'bullet'
 
 # User Authentication
