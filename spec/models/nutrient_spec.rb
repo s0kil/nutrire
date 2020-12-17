@@ -1,4 +1,6 @@
 RSpec.describe Nutrient, type: :model do
+  subject(:nutrient) { create(:nutrient) }
+
   it 'Creates A Valid Nutrient' do
     nutrient = build(:nutrient)
     assert(nutrient.valid?)
@@ -10,26 +12,26 @@ RSpec.describe Nutrient, type: :model do
   end
 
   it 'Belongs To :author' do
-    should belong_to(:author)
+    expect(nutrient).to belong_to(:author)
   end
 
   it 'Belongs To :category' do
-    should belong_to(:category)
+    expect(nutrient).to belong_to(:category)
   end
 
   it 'Has Many :votes' do
-    should have_many(:votes).dependent(:nullify)
+    expect(nutrient).to have_many(:votes).dependent(:nullify)
   end
 
   it 'Validates :title' do
-    should validate_presence_of(:title)
+    expect(nutrient).to validate_presence_of(:title)
   end
 
   it 'Validates :user_id' do
-    should validate_presence_of(:user_id)
+    expect(nutrient).to validate_presence_of(:user_id)
   end
 
   it 'Validates :category_id' do
-    should validate_presence_of(:category_id)
+    expect(nutrient).to validate_presence_of(:category_id)
   end
 end

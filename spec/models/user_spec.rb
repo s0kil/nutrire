@@ -1,5 +1,5 @@
 RSpec.describe User, type: :model do
-  subject { create(:user) }
+  subject(:user) { create(:user) }
 
   it 'Creates A New User' do
     user = build(:user)
@@ -12,28 +12,34 @@ RSpec.describe User, type: :model do
   end
 
   it 'Has Many :nutrients' do
-    should have_many(:nutrients).dependent(:nullify)
+    expect(user).to have_many(:nutrients).dependent(:nullify)
   end
 
   it 'Has Many :votes' do
-    should have_many(:votes).dependent(:nullify)
+    expect(user).to have_many(:votes).dependent(:nullify)
   end
 
   it 'Validates :name' do
-    should validate_presence_of(:name)
+    expect(user).to validate_presence_of(:name)
   end
 
   it 'Validates :password' do
-    should validate_presence_of(:password)
+    expect(user).to validate_presence_of(:password)
   end
 
-  it 'Validates :email' do
-    should validate_presence_of(:email)
-    should validate_uniqueness_of(:email).ignoring_case_sensitivity
+  it 'Validates :email Presence' do
+    expect(user).to validate_presence_of(:email)
   end
 
-  it 'Validates :username' do
-    should validate_presence_of(:username)
-    should validate_uniqueness_of(:username)
+  it 'Validates :email Uniqueness' do
+    expect(user).to validate_uniqueness_of(:email).ignoring_case_sensitivity
+  end
+
+  it 'Validates :username Presence' do
+    expect(user).to validate_presence_of(:username)
+  end
+
+  it 'Validates :username Uniqueness' do
+    expect(user).to validate_uniqueness_of(:username)
   end
 end
