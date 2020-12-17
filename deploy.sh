@@ -7,4 +7,4 @@ bundle exec bin/rails assets:precompile
 gcloud app deploy --no-promote
 
 # Migrate the database in production.
-bundle exec rake appengine:exec -- bundle exec rake db:migrate
+RAILS_ENV=production  bundle exec rake appengine:exec -- bundle exec rake db:migrate
