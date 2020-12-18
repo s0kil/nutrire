@@ -10,7 +10,7 @@ RSpec.describe CategoriesHelper, type: :helper do
         { nutrient: built_nutrients[2], grid_row_order: { image: 2, text: 1 } },
         { nutrient: built_nutrients[3], grid_row_order: { image: 2, text: 1 } },
         { nutrient: built_nutrients[4], grid_row_order: { image: 1, text: 2 } },
-        { nutrient: built_nutrients[5], grid_row_order: { image: 1, text: 2 } },
+        { nutrient: built_nutrients[5], grid_row_order: { image: 1, text: 2 } }
       ]
 
       expect(helper.include_grid_row_order(built_nutrients)).to eq(result)

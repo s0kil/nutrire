@@ -1,2 +1,1 @@
-RSpec.describe VotesHelper, type: :helper do
-end
+RSpec.describe VotesHelper, type: :helper

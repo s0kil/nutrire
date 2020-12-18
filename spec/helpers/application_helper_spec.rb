@@ -1,7 +1,7 @@
 RSpec.describe ApplicationHelper, type: :helper do
   describe '#image_or_placeholder' do
     it 'Returns URL When Not Nil' do
-      image_url = 'http://example.com/image.png'
+      image_url = 'https://example.com/image.png'
       expect(helper.image_or_placeholder({ url: image_url })).to be(image_url)
     end
 
@@ -17,9 +17,13 @@ RSpec.describe ApplicationHelper, type: :helper do
     before { create(:category) }
 
     it 'Returns Navigation For All Categories' do
-      expect(MinifyHtml.minify(helper.categories_navigation)).to(
-        eq('<ul class="flex space-x-4"><li class=uppercase><a class=hover:underline href=/category/Random%20Category>Random Category</a></ul>')
-      )
+      expect(MinifyHtml.minify(helper.categories_navigation)).to(eq(MinifyHtml.minify(%(
+        <ul class="flex space-x-4">
+          <li class=uppercase>
+            <a class=hover:underline href=/category/Random%20Category>Random Category</a>
+          </li>
+        </ul>
+      ))))
     end
   end
 end
