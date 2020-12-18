@@ -12,7 +12,7 @@ RSpec.describe Nutrient, type: :model do
   end
 
   it 'Belongs To :author' do
-    expect(nutrient).to belong_to(:author)
+    expect(nutrient).to belong_to(:author).class_name('User').inverse_of(:nutrients)
   end
 
   it 'Belongs To :category' do
