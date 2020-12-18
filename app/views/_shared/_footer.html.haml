@@ -1,0 +1,23 @@
+%footer{class: 'flex h-14 pl-6 pr-6 mt-10 mb-6'}
+  %div{class: 'self-center flex justify-center'}
+    %div{class: 'flex flex-row'}
+      = image_tag('logo_transparent.png', class: 'h-10')
+      %h1{class: 'text-xl self-end'}
+        = link_to 'Nutrire', root_path, class: 'hover:underline'
+  %div{class: 'flex-1 self-center flex justify-center'}
+    %ul{class: 'flex space-x-4'}
+      %li
+        %a{class: 'text-orange-600 hover:underline ', href: '/privacy-policy'}
+          Privacy Policy
+      %li
+        %a{class: 'text-orange-600 hover:underline ', href: '/terms-and-conditions'}
+          Terms & Conditions
+      %li
+        %span
+          Copyright 2020. All rights reserved.
+
+  %div{class: 'self-center flex justify-center'}
+    Connect With Us:
+    Icon1
+    Icon2
+    Icon3

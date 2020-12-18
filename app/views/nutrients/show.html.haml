@@ -1,0 +1,14 @@
+%div{class: 'container max-w-2xl m-auto'}
+  %div
+    = image_tag(image_or_placeholder({ url: @nutrient.image.url }), class: '', style: 'height: 400px; width: 100%')
+  %div{class: 'my-6'}
+    %h1{class: 'text-5xl text'}
+      = @nutrient.title
+  %div{class: 'my-6'}
+    %span= @author.name
+    %span= '|'
+    %span= time_tag(@nutrient.created_at)
+  %div{class: 'my-6'}
+    = voting_button(@nutrient)
+  %div{class: 'my-6'}
+    = @nutrient.text

@@ -1,0 +1,2 @@
+- https://cloud.google.com/ruby/rails
+- https://cloud.google.com/ruby/rails/using-cloudsql-postgres
