@@ -36,6 +36,9 @@ gem 'carrierwave'
 # URI Builder
 gem 'iri'
 
+# HTML Minifier
+gem 'minify_html'
+
 group :production do
   # A High Performance HTTP Server for Ruby
   gem 'agoo'
